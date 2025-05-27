@@ -4,13 +4,20 @@ import cgi
 data = cgi.FieldStorage()
 def x():
     t = ""
-    for i in range(100):
+    x = 0
+    y = 0
+    while y < 30:
+        x += 1
+        if x > 100:
+            x = 0
+            t += "\n"
+            y += 1
         t += "x"
-    print(t)  
-for i in range(30):
-    x()
+    return t
+print(x(), "\n")
 def button():
     print('''
+\n
 <select name="">
 <option value="Up">Up</option>
 <option value="Right">Right</option>
