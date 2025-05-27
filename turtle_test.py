@@ -10,5 +10,11 @@ def x():
 for i in range(30):
     x()
 def button():
-    print('<input type="button" name="Up" value="Up">')
+    print('''
+<select name="">
+<option value="Up">Up</option>
+<option value="Right">Right</option>
+<option value="Down">Down</option>
+<option value="Left">Left</option>
+</select>''')
 button()
